@@ -1,0 +1,212 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: #ffffff;
+    height: 250vw;
+    width: 100%;
+   
+}
+
+.imagen-cabeza{
+    padding-top: 125px;
+    display: block;
+    margin: 50px auto;
+    width: 70%;
+    
+}
+
+header{
+    margin: 0 auto;
+    text-align: center;
+}
+header h1{
+    padding-top: 100px;
+    font-size: 70px;
+    color: orangered;
+}
+header h2{
+    font-size: 40px;
+    color: orangered;
+    margin-bottom: 50px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+}
+
+.text{
+    grid-column: 2/3;
+    column-width: 25rem;
+    letter-spacing: 3px;
+    text-align: justify;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+.text hr{
+    margin: 10px auto;
+}
+
+.first-paragraph::first-letter{
+    font-size: 100px;
+    color: orangered;
+    float: left;
+}
+
+.text-with-image{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+}
+
+.image-1, .image-3{
+    width: 100%;
+    grid-column: 1/-1;
+    object-fit: cover;
+}
+.image-2{
+    width: 70%;
+    
+}
+
+.image-wrapeer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    align-items: center;
+    row-gap: 30px;
+}
+
+.quote{
+    font-size: 30px;
+    color: orangered;
+    margin: 20px auto;
+}
+
+.quote::after{
+    content: ' "';
+}
+
+.quote::before{
+    content: '" ';
+}
+
+.linea{
+    border: 2px solid white;
+}
+
+.article-title{
+    font-size: 60px;
+    color: orangered;
+}
+
+.article-subtitle{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: orangered;
+}
+
+li{
+    list-style-type: none;
+    margin: 20px auto;
+}
+
+.list-subtitle{
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+.list-text{
+    text-align: left;
+    font-style: italic;
+}
+
+.navegador{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(2, 2, 46);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+        
+}
+
+
+.enlace-ul{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+}
+
+
+.navegador h1{
+    grid-column: 1/2;
+    font-size: 50px;
+    margin-top: 10px;
+
+    
+}
+
+
+.enlace-list > a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;   
+    
+}
+
+.formulario{
+    grid-column: 2/3;
+    width: 900px;
+    margin: 0 auto;
+    height: 500px;
+    margin-top: 50px;
+}
+
+
+
+.formulario h1{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 50px;
+    color: orangered;
+    padding-top: 120px;
+}
+
+
+label{
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    color: orangered;
+    margin-top: 20px;
+}
+
+fieldset{
+    border: 0;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 500px;
+    text-align: center;
+    height: 20px;
+    font-size: 15px;
+    
+}
+
+input[type="submit"]{
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+
+}
